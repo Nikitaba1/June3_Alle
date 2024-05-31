@@ -76,7 +76,7 @@ public class Home extends WebDriverUtility{
 	 private WebElement  GoogleLink;
 	 
 	 @FindBy(xpath  = "//button[@title='Pinterest']")
-	 private WebElement  PinterestLink;
+	 private WebElement  Pinterestlink;
 	 
 	public WebElement getSignupLink() {
 		return signupLink;
@@ -169,7 +169,7 @@ public class Home extends WebDriverUtility{
 
 
 	public WebElement getPinterestLink() {
-		return PinterestLink;
+		return Pinterestlink;
 	}
 	
 }
