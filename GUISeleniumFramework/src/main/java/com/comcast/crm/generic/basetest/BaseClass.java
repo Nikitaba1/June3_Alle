@@ -91,7 +91,7 @@ public class BaseClass {
 		public void configAM() {
 			System.out.println("=logout=");
 			Home hp = new Home(driver);
-			hp.logout();
+			hp.getLogoutLink().click();
 		}
 		
 	    
@@ -109,8 +109,6 @@ public class BaseClass {
 		}
 	  
 	
-	   
-	    
-
+	 
 
 }
