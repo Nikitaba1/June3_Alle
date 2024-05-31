@@ -89,7 +89,7 @@ public class BaseClass {
 	    
 		@AfterMethod(groups = {"smokeTest", "regressionTest"})
 		public void configAM() {
-			System.out.println("=logout=");
+			System.out.println("==logout==");
 			Home hp = new Home(driver);
 			hp.getLogoutLink().click();
 		}
