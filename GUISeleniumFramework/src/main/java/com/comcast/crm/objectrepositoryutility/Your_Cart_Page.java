@@ -15,10 +15,19 @@ public class Your_Cart_Page {
 	}
 	@FindBy(linkText = "Place Order")
 	public WebElement place_Order;
+	
 	@FindBy(linkText = "Continue Shopping")
 	public WebElement continue_Shopping;
+	
+	@FindBy(xpath = "//div[contains(text(),'Order 1')]")
+	public WebElement Order_Title;
+	
+	public WebElement getOrder_Title() {
+		return Order_Title;
+	}
 	@FindBy(partialLinkText = "Remove")
 	public WebElement removebutton;
+	
 	public WebElement getPlace_Order() {
 		return place_Order;
 	}
