@@ -48,10 +48,7 @@ public class BaseClass {
 	    @BeforeClass(groups = {"smokeTest", "regressionTest"})
 	    public void configBC() throws Throwable {
 	    	
-	    System.out.println("==Launch the BROWSER==");
-	    
-		
-		
+	    System.out.println("++++++==Launch the BROWSER==+++++");
 	    
 	   // String BROWSER	= fLib.getDataFromPropertiesFile("browser");
 	    String BROWSER = System.getProperty("browser" , fLib.getDataFromPropertiesFile("browser"));
