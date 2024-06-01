@@ -66,16 +66,16 @@ public class Home extends WebDriverUtility{
 	 @FindBy(xpath  = "//img[@title='Twitter']")
 	 private WebElement  TwitterLink;
 	 
-	 @FindBy(xpath  = "//button[@title='LinkedIn']")
+	 @FindBy(xpath  = "//img[@title='LinkedIn']")
 	 private WebElement  LinkedInLink;
 	 
-	 @FindBy(xpath  = "//button[@title='Facebook']")
+	 @FindBy(xpath  = "//img[@title='Facebook']")
 	 private WebElement  FacebookLink;
 	 
-	 @FindBy(xpath  = "//button[@title='google+']")
+	 @FindBy(xpath  = "//img[@title='google+']")
 	 private WebElement  GoogleLink;
 	 
-	 @FindBy(xpath  = "//button[@title='Pinterest']")
+	 @FindBy(xpath  = "//img[@title='Pinterest']")
 	 private WebElement  Pinterestlink;
 	 
 	public WebElement getSignupLink() {

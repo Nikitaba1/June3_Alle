@@ -273,7 +273,13 @@ public class WebDriverUtility {
 		FileUtils.copyFile(srcFile, new File("./screenshot/"+testName+".png"));
 	   
 	}
+	public void navigationBack(WebDriver driver) {
+		driver.navigate().back();
+	}
 	
+	public void navigationRefresh(WebDriver driver) {
+		driver.navigate().refresh();
+	}
 }
 
 

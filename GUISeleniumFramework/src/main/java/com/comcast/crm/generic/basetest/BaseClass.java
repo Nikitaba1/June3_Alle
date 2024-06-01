@@ -84,6 +84,7 @@ public class BaseClass {
 			String PASSWORD = System.getProperty("password" , fLib.getDataFromPropertiesFile("password"));
 			LoginPage lp = new LoginPage(driver);
 			lp.loginToapp(URL, USERNAME, PASSWORD);
+
 		}
 	    
 	    

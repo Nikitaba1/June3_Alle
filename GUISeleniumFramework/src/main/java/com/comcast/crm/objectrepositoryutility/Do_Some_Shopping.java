@@ -13,4 +13,16 @@ public class Do_Some_Shopping {
 	@FindBy(linkText = "Do Some Shopping")
 	public WebElement do_some_shopping;
 
+	public WebElement getDo_some_shopping() {
+		return do_some_shopping;
+	}
+	
+	@FindBy(xpath = "//h2[contains(text(),'YOUR CART')]")
+	public WebElement YourcartText;
+	
+
+	public WebElement getYourcartText() {
+		return YourcartText;
+	}
+
 }

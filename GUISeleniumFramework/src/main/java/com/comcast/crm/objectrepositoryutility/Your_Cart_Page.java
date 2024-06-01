@@ -17,5 +17,15 @@ public class Your_Cart_Page {
 	public WebElement place_Order;
 	@FindBy(linkText = "Continue Shopping")
 	public WebElement continue_Shopping;
-
+	@FindBy(partialLinkText = "Remove")
+	public WebElement removebutton;
+	public WebElement getPlace_Order() {
+		return place_Order;
+	}
+	public WebElement getContinue_Shopping() {
+		return continue_Shopping;
+	}
+	public WebElement getRemovebutton() {
+		return removebutton;
+	}
 }
