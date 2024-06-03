@@ -50,7 +50,7 @@ public class Follow_Us_LinkTest extends BaseClass {
 		wu.navigationBack(driver);
 		wu.navigationRefresh(driver);
 		wu.switchtoAlertAndAccept(driver);
-		Reporter.log("Google link is working",true);
+		Reporter.log("Google link working Good",true);
 		
 //		//Click on pinterest link
 //		hp.getPinterestLink().click();
