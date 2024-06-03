@@ -35,7 +35,19 @@ public class Entrance_Exam_Store {
 	public WebElement ele_Mechanical_Eng;
 	@FindBy(xpath = "//img[@class='book block-center img-responsive' and @src='img/books/ENT-12.jpg']")
 	public WebElement ele_Mechanical_Eng_Paper2;
+	@FindBy(xpath = "//div[@class='book-block']")
+	private WebElement searched_Book;
+	@FindBy(xpath = "//h4[@style='color:#00B9F5;text-transform:uppercase;']")
+	private WebElement NoFounds;
 	
+	public WebElement getNoFounds() {
+		return NoFounds;
+	}
+
+	public WebElement getSearched_Book() {
+		return searched_Book;
+	}
+
 	public WebElement getMechanical_Eng_Paper2() {
 		return ele_Mechanical_Eng_Paper2;
 	}
