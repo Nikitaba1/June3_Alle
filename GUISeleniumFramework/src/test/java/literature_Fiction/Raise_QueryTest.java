@@ -5,6 +5,7 @@ package literature_Fiction;
  * Raise the Query
  */
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.comcast.crm.generic.basetest.BaseClass;
@@ -13,7 +14,7 @@ import com.comcast.crm.generic.webdriverutility.WebDriverUtility;
 import com.comcast.crm.objectrepositoryutility.AskQuery_page;
 import com.comcast.crm.objectrepositoryutility.Home;
 
-
+@Listeners(com.comcast.crm.generic.listenerutility.Listeners_Implimentation.class)
 public class Raise_QueryTest extends BaseClass {
 	@Test
 	public void raiseQueryTest() throws Throwable {
