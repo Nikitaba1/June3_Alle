@@ -5,6 +5,7 @@ package literature_Fiction;
  * Login, Click on Literature & Fiction Module buy one product and order it
  */
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.comcast.crm.generic.basetest.BaseClass;
@@ -14,7 +15,7 @@ import com.comcast.crm.objectrepositoryutility.Home;
 import com.comcast.crm.objectrepositoryutility.Literature_and_Fiction_page;
 import com.comcast.crm.objectrepositoryutility.Your_Cart_Page;
 
-
+@Listeners(com.comcast.crm.generic.listenerutility.Listeners_Implimentation.class)
 public class Buy_Product_Test extends BaseClass{
 	
 	@Test

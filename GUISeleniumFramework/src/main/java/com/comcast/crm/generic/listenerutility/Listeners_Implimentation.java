@@ -25,8 +25,8 @@ public class Listeners_Implimentation implements ITestListener, ISuiteListener {
 	public void onStart(ISuite suite) {
 		String time = new Date().toString().replace(" ", "_").replace(":", "_");
 		spark= new ExtentSparkReporter("./AdvanceReport/Report_"+time+".html");
-		spark.config().setDocumentTitle("CRM Test Suite Results");
-		spark.config().setReportName("CRM result");
+		spark.config().setDocumentTitle("Book_Lounge Test Suite Results");
+		spark.config().setReportName("Book_Lounge result");
 		spark.config().setTheme(Theme.STANDARD);
 		
 		report = new ExtentReports();
@@ -61,14 +61,15 @@ public class Listeners_Implimentation implements ITestListener, ISuiteListener {
 		TakesScreenshot tks = (TakesScreenshot)BaseClass.sdriver;
 		String temp = tks.getScreenshotAs(OutputType.BASE64);
 		String time = new Date().toString().replace(" ", "_").replace(":", "_");
-//		//Base64 src= new Base64("./scrrenshot/"+methodname+time+".png");
+//		File src= new File("./scrrenshot/"+methodname+time+".png");
 //		try {
-//			//FileHandler.(src, temp);
-//		} catch (IOException e) {
-//			// TODO Auto-generated catch block
+//			FileHandler.copy(temp, src);
+//	} catch (IOException e) {
+//		// TODO Auto-generated catch block
 //			e.printStackTrace();
 //		}
-		test.addScreenCaptureFromBase64String(methodname+time);
+		test.addScreenCaptureFromBase64String(temp, methodname+" "+time);
+		test.log(Status.INFO, result.getMethod().getMethodName()+"==========FAILED========");
 	}
 
 	@Override

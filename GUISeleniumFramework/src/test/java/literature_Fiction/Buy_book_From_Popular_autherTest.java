@@ -6,6 +6,7 @@ package literature_Fiction;
  */
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.comcast.crm.generic.basetest.BaseClass;
@@ -14,7 +15,7 @@ import com.comcast.crm.objectrepositoryutility.Book_Discription_page;
 import com.comcast.crm.objectrepositoryutility.Do_Some_Shopping;
 import com.comcast.crm.objectrepositoryutility.Popular_Author_PageTest;
 import com.comcast.crm.objectrepositoryutility.Your_Cart_Page;
-
+@Listeners(com.comcast.crm.generic.listenerutility.Listeners_Implimentation.class)
 public class Buy_book_From_Popular_autherTest extends BaseClass{
 	@Test
 	public void popularAuthorBookTest() {
